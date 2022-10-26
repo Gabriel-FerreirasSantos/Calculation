@@ -1,6 +1,5 @@
-#lista and variaveis
-lista_numero = (1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
-
+#import's
+from calculadora import calculadora_main
 
 
 #Programa principal
@@ -43,7 +42,30 @@ while Variavel_while1 == False:
     #verificação de qual numero foi escolhido
     while True:
         if escolha == 1:
-            pass
+            print('[1]Adição')
+            print('[2]Subtração')
+            print('[3]Divisão')
+            print('[4]Mutiplicação')
+            print('[5]Raiz quadrada')
+            print('[6]Potenciação')
+            escolha2 = input('')
+            if escolha2 == '1':
+                calculadora_main.contademais()
+
+            elif escolha2 == '2':
+                calculadora_main.contademenos()
+
+            elif escolha2 == '3':
+                calculadora_main.contadedividir()
+
+            elif escolha2 == '4':
+                calculadora_main.contademutiplicação() 
+
+            elif escolha2 == '5':
+                calculadora_main.contaderaiz()
+                
+            elif escolha2 == '6':
+                calculadora_main.contadepotenciação() 
 
         elif escolha == 2:
             pass

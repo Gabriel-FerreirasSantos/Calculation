@@ -1,12 +1,12 @@
 #import's
-import string
 from calculadora import calculadora_main
 
 from replit import clear
 
 #Programa principal
 Variavel_while1 = False
-
+Variavel_while2 = False
+variavel_whileql = False
 
 while Variavel_while1 == False:
     clear()
@@ -21,7 +21,8 @@ while Variavel_while1 == False:
     
     escolha = str(input(''))
     escolha = escolha.strip()
-
+    Variavel_while2 = False
+    variavel_whileql = False
 
     #verificar se o numero não é numerico
     if not escolha.isnumeric():
@@ -35,7 +36,7 @@ while Variavel_while1 == False:
 
 
     #verificação de qual numero foi escolhido
-    while True:
+    while Variavel_while2 == False:
         if escolha == 1:
             while True:
                 clear()
@@ -99,34 +100,53 @@ while Variavel_while1 == False:
                         break
                     
                 elif escolha2 == '7':
+                    Variavel_while2 = True
                     break
 
                 else:
-                    print('caiu no break')
-                    break
+                    while variavel_whileql == False:
+                        print('Você não digitou um número da lista')
+                        print('Você precisa digitar um número que esta na lista!')
+                        print('Deseja voltar? (s/n)')
+                        voltar = str(input('')).strip().lower()
+                        if voltar == 's':
+                            break
+                        elif voltar == 'n':
+                            print('Volte sempre!')
+                            Variavel_while2 = True
+                            Variavel_whileql = True
+                            break
+                        else:
+                            print('Escreva direito!')
+                            Variavel_while2 = True
+                            Variavel_whileql = True
+                            break
 
         elif escolha == 2:
-            pass
-
-        if escolha == 3:
-            Variavel_while1 = True
             break
 
+        elif escolha == 3:
+            Variavel_while1 = True
+            break
         else:
-            print('Você não digitou um número da lista')
-            print('Você precisa digitar um número que esta na lista!')
-            print('Deseja voltar? (s/n)')
-            voltar = str(input('')).strip().lower()
-            if voltar == 's':
-                break
-            elif voltar == 'n':
-                print('Volte sempre!')
-                Variavel_while1 = True
-                break
-            else:
-                print('Escreva direito!')
-                Variavel_while1 = True
-                break
-
+            while True:
+                print('Você não digitou um número da lista')
+                print('Você precisa digitar um número que esta na lista!')
+                print('Deseja voltar? (s/n)')
+                voltar = str(input('')).strip().lower()
+                if voltar == 's':
+                    Variavel_while2 = True
+                    break
+                elif voltar == 'n':
+                    print('Volte sempre!')
+                    Variavel_while1 = True
+                    Variavel_while2 = True
+                    break
+                else:
+                    print('Escreva direito!')
+                    Variavel_while1 = True
+                    Variavel_while2 = True
+                    break
         
+
         

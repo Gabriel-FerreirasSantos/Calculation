@@ -25,6 +25,8 @@ def contademenos():
         if not a.isnumeric() or not b.isnumeric():
             print('Você não digitou um número')
             print('Você precisa digitar um número!')
+            sleep(1.5)
+            clear()
             continue
         s = float(a) - float(b)
         print('Resultado = {:.2f}'.format(s))
@@ -37,6 +39,8 @@ def contadedividir():
         if not a.isnumeric() or not b.isnumeric():
             print('Você não digitou um número')
             print('Você precisa digitar um número!')
+            sleep(1.5)
+            clear()
             continue
         s3 = float(a) /  float(b)
         print('Resultado = {:.2f}'.format(s3))
@@ -49,6 +53,8 @@ def contademutiplicação():
         if not a.isnumeric() or not b.isnumeric():
             print('Você não digitou um número')
             print('Você precisa digitar um número!')
+            sleep(1.5)
+            clear()
             continue
         s4 = float(a) * float(b)
         print('Resultado = {:.2f}'.format(s4))  
@@ -56,10 +62,12 @@ def contademutiplicação():
 
 def contaderaiz():
     while True:
-        num = input("Digite um numero:\n")
+        num = input("Digite um numero:")
         if not num.isnumeric():
             print('Você não digitou um número')
             print('Você precisa digitar um número!')
+            sleep(1.5)
+            clear()
             continue
         raiz = math.pow(float(num), 1/2)
         print('Resultado =','{:.2f}'.format(raiz))
@@ -72,6 +80,8 @@ def contadepotenciação():
         if not a.isnumeric() or not b.isnumeric():
             print('Você não digitou um número')
             print('Você precisa digitar um número!')
+            sleep(1.5)
+            clear()
             continue
         s6 = float(a) ** float(b)
         print('Resultado =','{:.2f}'.format(s6))     

@@ -1,5 +1,6 @@
 #import's
 from calculadora import calculadora_main
+from exercicios import exercicios_main
 
 from replit import clear
 
@@ -123,7 +124,23 @@ while Variavel_while1 == False:
                             break
 
         elif escolha == 2:
-            break
+            while True:
+                clear()
+                print('-=' * 25)
+                print(' ' * 10, 'Bem vindo ao painel da Takern exercicios')
+                print('-=' * 25)
+                print('Você deseja fazer exercicios de:')
+                print('[1]Adição')
+                print('[2]Subtração')
+                print('[3]Divisão')
+                print('[4]Mutiplicação')
+                print('[5]Raiz quadrada')
+                print('[6]Potenciação')
+                print('[7]Voltar')
+                escolha = input('R:')
+                escolha = escolha.strip()
+
+                exercicios_main.exercicio_adição()
 
         elif escolha == 3:
             Variavel_while1 = True

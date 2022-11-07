@@ -128,8 +128,88 @@ while Variavel_while1 == False:
         elif escolha == 2:
             while True:
                 clear()
-                sleep(1)
-                break
+                print('-=' * 25)
+                print(' ' * 5, 'Bem vindo ao painel de exercicio da Takern')
+                print('-=' * 25)
+                print('[1]Adição')
+                print('[2]Subtração')
+                print('[3]Divisão')
+                print('[4]Mutiplicação')
+                print('[5]Raiz quadrada')
+                print('[6]Potenciação')
+                print('[7]Voltar')
+                escolha2 = input('R:')
+                if escolha2 == '1':
+                    while True:
+                        clear()
+                        
+                        print('Aperte qualquer botão para voltar')
+                        botao = input('')
+                        break
+
+                elif escolha2 == '2':
+                    while True:
+                        clear()
+                        
+                        print('Aperte qualquer botão para voltar')
+                        botao = input('')
+                        break
+
+                elif escolha2 == '3':
+                    while True:
+                        clear()
+                        
+                        print('Aperte qualquer botão para voltar')
+                        botao = input('')
+                        break
+
+                elif escolha2 == '4':
+                    while True:
+                        clear()
+                        
+                        print('Aperte qualquer botão para voltar')
+                        botao = input('')
+                        break
+
+                elif escolha2 == '5':
+                    while True:
+                        clear()
+                        
+                        print('Aperte qualquer botão para voltar')
+                        botao = input('')
+                        break
+
+                elif escolha2 == '6':
+                    while True:
+                        clear()
+                        
+                        print('Aperte qualquer botão para voltar')
+                        botao = input('')
+                        break
+                    
+                elif escolha2 == '7':
+                    Variavel_while2 = True
+                    break
+
+                else:
+                    while variavel_whileql == False:
+                        print('Você não digitou um número da lista')
+                        print('Você precisa digitar um número que esta na lista!')
+                        print('Deseja voltar? (s/n)')
+                        voltar = str(input('R:')).strip().lower()
+                        if voltar == 's':
+                            break
+                        elif voltar == 'n':
+                            print('Volte sempre!')
+                            Variavel_while2 = True
+                            Variavel_whileql = True
+                            break
+                        else:
+                            print('Escreva direito!')
+                            Variavel_while2 = True
+                            Variavel_whileql = True
+                            break
+
 
 
         elif escolha == 3:

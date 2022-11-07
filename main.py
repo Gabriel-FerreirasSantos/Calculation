@@ -3,6 +3,7 @@ from calculadora import calculadora_main
 from exercicios import exercicios_main
 
 from replit import clear
+from time import sleep
 
 #Programa principal
 Variavel_while1 = False
@@ -20,7 +21,7 @@ while Variavel_while1 == False:
     print('[3] Fechar o programa')
 
     
-    escolha = str(input(''))
+    escolha = str(input('R:'))
     escolha = escolha.strip()
     Variavel_while2 = False
     variavel_whileql = False
@@ -51,7 +52,7 @@ while Variavel_while1 == False:
                 print('[5]Raiz quadrada')
                 print('[6]Potenciação')
                 print('[7]Voltar')
-                escolha2 = input('')
+                escolha2 = input('R:')
                 if escolha2 == '1':
                     while True:
                         clear()
@@ -109,7 +110,7 @@ while Variavel_while1 == False:
                         print('Você não digitou um número da lista')
                         print('Você precisa digitar um número que esta na lista!')
                         print('Deseja voltar? (s/n)')
-                        voltar = str(input('')).strip().lower()
+                        voltar = str(input('R:')).strip().lower()
                         if voltar == 's':
                             break
                         elif voltar == 'n':
@@ -123,34 +124,25 @@ while Variavel_while1 == False:
                             Variavel_whileql = True
                             break
 
+
         elif escolha == 2:
             while True:
                 clear()
-                print('-=' * 25)
-                print(' ' * 10, 'Bem vindo ao painel da Takern exercicios')
-                print('-=' * 25)
-                print('Você deseja fazer exercicios de:')
-                print('[1]Adição')
-                print('[2]Subtração')
-                print('[3]Divisão')
-                print('[4]Mutiplicação')
-                print('[5]Raiz quadrada')
-                print('[6]Potenciação')
-                print('[7]Voltar')
-                escolha = input('R:')
-                escolha = escolha.strip()
+                sleep(1)
+                break
 
-                exercicios_main.exercicio_adição()
 
         elif escolha == 3:
             Variavel_while1 = True
             break
+
+
         else:
             while True:
                 print('Você não digitou um número da lista')
                 print('Você precisa digitar um número que esta na lista!')
                 print('Deseja voltar? (s/n)')
-                voltar = str(input('')).strip().lower()
+                voltar = str(input('R:')).strip().lower()
                 if voltar == 's':
                     Variavel_while2 = True
                     break
@@ -166,4 +158,3 @@ while Variavel_while1 == False:
                     break
         
 
-        

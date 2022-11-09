@@ -142,10 +142,53 @@ while Variavel_while1 == False:
                 if escolha2 == '1':
                     while True:
                         clear()
-                        
-                        print('Aperte qualquer botão para voltar')
-                        botao = input('')
-                        break
+                        print('-=' * 25)
+                        print(' ' * 15, 'Dificuldade')
+                        print('-=' * 25)
+                        print('[1]Fácil')
+                        print('[2]Médio')
+                        print('[3]Dificil')
+                        print('[4]Impossível')
+                        escolha2 = input('R:')
+                        if escolha2 == 1:
+                            exercicios_main.exercicio_adiçãoleve1()
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == 2:
+                            exercicios_main.exercicio_adiçãoleve1()
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == 3:
+                            exercicios_main.exercicio_adiçãoleve1()
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == 4:
+                            exercicios_main.exercicio_adiçãoleve1()
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        else:
+                            while variavel_whileql == False:
+                                print('Você não digitou um número da lista')
+                                print('Você precisa digitar um número que esta na lista!')
+                                print('Deseja voltar? (s/n)')
+                                voltar = str(input('R:')).strip().lower()
+                                if voltar == 's':
+                                    break
+                                elif voltar == 'n':
+                                    print('Volte sempre!')
+                                    Variavel_while2 = True
+                                    Variavel_whileql = True
+                                    break
+                                else:
+                                    print('Escreva direito!')
+                                    Variavel_while2 = True
+                                    Variavel_whileql = True
+                                    break
+
 
                 elif escolha2 == '2':
                     while True:

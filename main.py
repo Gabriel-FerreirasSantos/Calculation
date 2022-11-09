@@ -149,26 +149,29 @@ while Variavel_while1 == False:
                         print('[2]Médio')
                         print('[3]Dificil')
                         print('[4]Impossível')
+                        print('[5]Voltar')
                         escolha2 = input('R:')
-                        if escolha2 == 1:
+                        if escolha2 == '1':
                             exercicios_main.exercicio_adiçãoleve1()
                             print('Aperte qualquer botão para voltar')
                             botao = input('')
                             break
-                        elif escolha2 == 2:
+                        elif escolha2 == '2':
                             exercicios_main.exercicio_adiçãoleve1()
                             print('Aperte qualquer botão para voltar')
                             botao = input('')
                             break
-                        elif escolha2 == 3:
+                        elif escolha2 == '3':
                             exercicios_main.exercicio_adiçãoleve1()
                             print('Aperte qualquer botão para voltar')
                             botao = input('')
                             break
-                        elif escolha2 == 4:
+                        elif escolha2 == '4':
                             exercicios_main.exercicio_adiçãoleve1()
                             print('Aperte qualquer botão para voltar')
                             botao = input('')
+                            break
+                        elif escolha2 == '5':
                             break
                         else:
                             while variavel_whileql == False:

@@ -157,17 +157,17 @@ while Variavel_while1 == False:
                             botao = input('')
                             break
                         elif escolha2 == '2':
-                            exercicios_main.exercicio_adiçãoleve1()
+                            exercicios_main.exercicio_adiçãoleve2()
                             print('Aperte qualquer botão para voltar')
                             botao = input('')
                             break
                         elif escolha2 == '3':
-                            exercicios_main.exercicio_adiçãoleve1()
+                            exercicios_main.exercicio_adiçãoleve3()
                             print('Aperte qualquer botão para voltar')
                             botao = input('')
                             break
                         elif escolha2 == '4':
-                            exercicios_main.exercicio_adiçãoleve1()
+                            exercicios_main.exercicio_adiçãoleve4()
                             print('Aperte qualquer botão para voltar')
                             botao = input('')
                             break
@@ -185,42 +185,213 @@ while Variavel_while1 == False:
                 elif escolha2 == '2':
                     while True:
                         clear()
-                        
-                        print('Aperte qualquer botão para voltar')
-                        botao = input('')
-                        break
+                        print('-=' * 25)
+                        print(' ' * 15, 'Dificuldade')
+                        print('-=' * 25)
+                        print('[1]Fácil')
+                        print('[2]Médio')
+                        print('[3]Dificil')
+                        print('[4]Impossível')
+                        print('[5]Voltar')
+                        escolha2 = input('R:')
+                        if escolha2 == '1':
+                            exercicios_main.exercicio_subtraçãolevel1()
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '2':
+                            exercicios_main.exercicio_subtraçãolevel2()
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '3':
+                            exercicios_main.exercicio_subtraçãolevel3()
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '4':
+                            exercicios_main.exercicio_subtraçãolevel4()
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '5':
+                            break
+                        else:
+                            while variavel_whileql == False:
+                                print('Você não digitou um número da lista')
+                                print('Você precisa digitar um número que esta na lista!')
+                                print('Aperte qualquer botão para voltar')
+                                botao = input('')
+                                break
+
 
                 elif escolha2 == '3':
                     while True:
                         clear()
-                        
-                        print('Aperte qualquer botão para voltar')
-                        botao = input('')
-                        break
+                        print('-=' * 25)
+                        print(' ' * 15, 'Dificuldade')
+                        print('-=' * 25)
+                        print('[1]Fácil')
+                        print('[2]Médio')
+                        print('[3]Dificil')
+                        print('[4]Impossível')
+                        print('[5]Voltar')
+                        escolha2 = input('R:')
+                        if escolha2 == '1':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '2':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '3':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '4':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '5':
+                            break
+                        else:
+                            while variavel_whileql == False:
+                                print('Você não digitou um número da lista')
+                                print('Você precisa digitar um número que esta na lista!')
+                                print('Aperte qualquer botão para voltar')
+                                botao = input('')
+                                break
 
                 elif escolha2 == '4':
                     while True:
                         clear()
-                        
-                        print('Aperte qualquer botão para voltar')
-                        botao = input('')
-                        break
+                        print('-=' * 25)
+                        print(' ' * 15, 'Dificuldade')
+                        print('-=' * 25)
+                        print('[1]Fácil')
+                        print('[2]Médio')
+                        print('[3]Dificil')
+                        print('[4]Impossível')
+                        print('[5]Voltar')
+                        escolha2 = input('R:')
+                        if escolha2 == '1':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '2':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '3':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '4':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '5':
+                            break
+                        else:
+                            while variavel_whileql == False:
+                                print('Você não digitou um número da lista')
+                                print('Você precisa digitar um número que esta na lista!')
+                                print('Aperte qualquer botão para voltar')
+                                botao = input('')
+                                break
 
                 elif escolha2 == '5':
                     while True:
                         clear()
-                        
-                        print('Aperte qualquer botão para voltar')
-                        botao = input('')
-                        break
+                        print('-=' * 25)
+                        print(' ' * 15, 'Dificuldade')
+                        print('-=' * 25)
+                        print('[1]Fácil')
+                        print('[2]Médio')
+                        print('[3]Dificil')
+                        print('[4]Impossível')
+                        print('[5]Voltar')
+                        escolha2 = input('R:')
+                        if escolha2 == '1':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '2':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '3':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '4':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '5':
+                            break
+                        else:
+                            while variavel_whileql == False:
+                                print('Você não digitou um número da lista')
+                                print('Você precisa digitar um número que esta na lista!')
+                                print('Aperte qualquer botão para voltar')
+                                botao = input('')
+                                break
 
                 elif escolha2 == '6':
-                    while True:
+                   while True:
                         clear()
-                        
-                        print('Aperte qualquer botão para voltar')
-                        botao = input('')
-                        break
+                        print('-=' * 25)
+                        print(' ' * 15, 'Dificuldade')
+                        print('-=' * 25)
+                        print('[1]Fácil')
+                        print('[2]Médio')
+                        print('[3]Dificil')
+                        print('[4]Impossível')
+                        print('[5]Voltar')
+                        escolha2 = input('R:')
+                        if escolha2 == '1':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '2':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '3':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '4':
+                            
+                            print('Aperte qualquer botão para voltar')
+                            botao = input('')
+                            break
+                        elif escolha2 == '5':
+                            break
+                        else:
+                            while variavel_whileql == False:
+                                print('Você não digitou um número da lista')
+                                print('Você precisa digitar um número que esta na lista!')
+                                print('Aperte qualquer botão para voltar')
+                                botao = input('')
+                                break
                     
                 elif escolha2 == '7':
                     Variavel_while2 = True

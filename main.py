@@ -177,20 +177,9 @@ while Variavel_while1 == False:
                             while variavel_whileql == False:
                                 print('Você não digitou um número da lista')
                                 print('Você precisa digitar um número que esta na lista!')
-                                print('Deseja voltar? (s/n)')
-                                voltar = str(input('R:')).strip().lower()
-                                if voltar == 's':
-                                    break
-                                elif voltar == 'n':
-                                    print('Volte sempre!')
-                                    Variavel_while2 = True
-                                    Variavel_whileql = True
-                                    break
-                                else:
-                                    print('Escreva direito!')
-                                    Variavel_while2 = True
-                                    Variavel_whileql = True
-                                    break
+                                print('Aperte qualquer botão para voltar')
+                                botao = input('')
+                                break
 
 
                 elif escolha2 == '2':
@@ -241,20 +230,9 @@ while Variavel_while1 == False:
                     while variavel_whileql == False:
                         print('Você não digitou um número da lista')
                         print('Você precisa digitar um número que esta na lista!')
-                        print('Deseja voltar? (s/n)')
-                        voltar = str(input('R:')).strip().lower()
-                        if voltar == 's':
-                            break
-                        elif voltar == 'n':
-                            print('Volte sempre!')
-                            Variavel_while2 = True
-                            Variavel_whileql = True
-                            break
-                        else:
-                            print('Escreva direito!')
-                            Variavel_while2 = True
-                            Variavel_whileql = True
-                            break
+                        print('Aperte qualquer botão para voltar')
+                        botao = input('')
+                        break
 
 
 

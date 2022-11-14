@@ -7,25 +7,33 @@ def exercicio_adiçãoleve1():
     print('Resolva essa conta:')
     x = random.randint(0, 100)
     y = random.randint(0, 100)
-    resultado = int(x) + int(y)
-    resposta = input(f'{x} + {y} =').replace('', ' ')
-    while True:
+    a = True
+    while a == True:
+        a = True
+        resposta = input(f'{x} + {y} =').strip()
         if not resposta.isnumeric():
             print('Você não digitou um número')
             print('Você precisa digitar um número!')
             break
 
-    resposta = int(resposta)
-    while True:
-        if resposta == resultado:
-            print('Acertou!')
-            print(f'{x} + {y} = {resultado}')
-            
-        elif resposta != resultado:
-            print('Respota errada!')
-            voltar = input('Deseja tentar novamente? (s/n)')
-            if voltar == 's':
+        while True:
+            resultado = int(x) + int(y)
+            resposta = int(resposta)
+
+            if resposta == resultado:
+                clear()
+                print('Acertou!')
+                print(f'{x} + {y} = {resultado}')
+                a = False
                 break
+
+            elif resposta != resultado:
+                print('Respota errada!')
+                voltar = input('Deseja tentar novamente? (s/n)')
+                if voltar == 's':
+                    clear()
+                    break
+                        
            
 
 

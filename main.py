@@ -238,7 +238,7 @@ while Variavel_while1 == False:
                         print('[5]Voltar')
                         escolha2 = input('R:')
                         if escolha2 == '1':
-                            
+                            exercicios_main.exercicio_divisãoleve1()
                             print('Aperte qualquer botão para voltar')
                             botao = input('')
                             break

@@ -273,3 +273,44 @@ def exercicio_subtraçãolevel4():
                 if voltar == 's':
                     clear()
                     break
+
+
+
+
+
+
+
+
+def exercicio_divisãoleve1():
+    clear()
+    print('Resolva essa conta:')
+    x = random.randint(2, 100)
+    y = random.randint(2, 100)
+    if y > x:
+        x +=  y
+    a = True
+    while a == True:
+        a = True
+        resposta = input(f'{x} / {y} =').strip()
+        if not resposta.isnumeric():
+            print('Você não digitou um número')
+            print('Você precisa digitar um número!')
+            break
+
+        while True:
+            resultado = float(x) / float(y)
+            resposta = int(resposta)
+
+            if resposta == resultado:
+                clear()
+                print('Acertou!')
+                print(f'{x} / {y} = {resultado}')
+                a = False
+                break
+
+            elif resposta != resultado:
+                print('Respota errada!')
+                voltar = input('Deseja tentar novamente? (s/n)')
+                if voltar == 's':
+                    clear()
+                    break
